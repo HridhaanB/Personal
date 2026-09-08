@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Hridhaan's Website</title>
+	<link href="../style.css" rel="stylesheet" type="text/css">
+	<link rel="icon" type="image/x-icon" href="/Me.jpg">
+	<script>
+	MathJax = {
+		tex: {
+			inlineMath: [['$', '$'], ['\\(', '\\)']],
+			displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+		}
+	};
+	</script>
+	<script id="MathJax-script" async
+		src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+	</script>
+</head>
+<body>
+	<nav class="navbar">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/divisibility-rules" class="active">Divisibility Rules</a>
+        <ul class="mDrop">
+          <li><a href="/divisibility-rules/divisibility-rule-for-2">Divisibility Rule for 2</a></li>
+          <li><a href="/divisibility-rules/divisibility-rule-for-3">Divisibility Rule for 3</a></li>
+          <li><a href="/divisibility-rules/divisibility-rule-for-4">Divisibility Rule for 4</a></li>
+					<li><a href="/divisibility-rules/divisibility-rule-for-5">Divisibility Rule for 5</a></li>
+					<li><a href="/divisibility-rules/divisibility-rule-for-6">Divisibility Rule for 6</a></li>
+					<li><a href="/divisibility-rules/divisibility-rule-for-7">Divisibility Rule for 7</a></li>
+        </ul>
+      </li>
+      <li><a href="/desmos">Desmos</a></li>
+      <li style="float:right"><a href="#help">Help</a></li>
+    </ul>
+  </nav>
+  <h1>MOD TIME!</h1>
+	<p>
+    Here, I will be using modular arithmetic rule to prove common and uncommon divisibility rules. The general process is that you write a number in the form $10^x\cdot d_x + 10^{x-1}\cdot d_{x-1} + \cdots + 10\cdot d_1 + d_0$ reduce all the powers of 10 into their residue mod whatever number's divisibility rule that you're checking. You then take the result and simplify it. See below for examples.
+	</p>
+	<p>This means that any number can have a divisibility rule. More formally, to check a number A is divisible by another number N if and only if it is N evenly divides another number less than or equal to A. This even works in other bases.</p>
+	<p style="text-align: center;">Here is a list of proofs:</p>
+	<a href="/divisibility-rules/divisibility-rule-for-2"><button class="file"><img src="../file.png" alt="folder">&nbsp;&nbsp;&nbsp;Divisibility rule for 2</button></a>
+		<a href="/divisibility-rules/divisibility-rule-for-3"><button class="file"><img src="../file.png" alt="folder">&nbsp;&nbsp;&nbsp;Divisibility rule for 3</button></a>
+		<a href="/divisibility-rules/divisibility-rule-for-4"><button class="file"><img src="../file.png" alt="folder">&nbsp;&nbsp;&nbsp;Divisibility rule for 4</button></a>
+		<a href="/divisibility-rules/divisibility-rule-for-5"><button class="file"><img src="../file.png" alt="folder">&nbsp;&nbsp;&nbsp;Divisibility rule for 5</button></a>
+		<a href="/divisibility-rules/divisibility-rule-for-6"><button class="file"><img src="../file.png" alt="folder">&nbsp;&nbsp;&nbsp;Divisibility rule for 6</button></a>
+		<a href="/divisibility-rules/divisibility-rule-for-7"><button class="file"><img src="../file.png" alt="folder">&nbsp;&nbsp;&nbsp;Divisibility rule for 7</button></a>
+</body>
+</html>

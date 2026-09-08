@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Hridhaan's Website</title>
+	<link href="../sigma_style.css" rel="stylesheet" type="text/css">
+	<link href="../../style.css" rel="stylesheet" type="text/css">
+	<link rel="icon" type="image/x-icon" href="/Me.jpg">
+</head>
+<body>
+	<nav class="navbar">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/divisibility-rules" class="subactive">Divisibility Rules</a>
+        <ul class="mDrop">
+          <li><a href="/divisibility-rules/divisibility-rule-for-2">Divisibility Rule for 2</a></li>
+          <li><a href="/divisibility-rules/divisibility-rule-for-3">Divisibility Rule for 3</a></li>
+          <li><a href="/divisibility-rules/divisibility-rule-for-4">Divisibility Rule for 4</a></li>
+					<li><a href="/divisibility-rules/divisibility-rule-for-5">Divisibility Rule for 5</a></li>
+					<li><a href="/divisibility-rules/divisibility-rule-for-6" class="active">Divisibility Rule for 6</a></li>
+					<li><a href="/divisibility-rules/divisibility-rule-for-7">Divisibility Rule for 7</a></li>
+        </ul>
+      </li>
+      <li><a href="/desmos">Desmos</a></li>
+      <li style="float:right"><a href="#help">Help</a></li>
+    </ul>
+  </nav>
+  <h1>Divisibility rule for 6</h1>
+	<p>
+    We all know the classic divisibility rule for 6. Just combine the ones for 2 and 3. What if I told you that there was a specific divisibility rule for 6 that didn't involve checking all of its prime factors. 😱 Anyway, here is how it goes. If the units digit of a number plus quadruple the sum of the rest of the digits is divisible by 6, then the original number is divisible by 6.</p>
+	<p> Here, <i>x</i> is the place of the digit (units is 0, 10s is 1, 100s is 2, etc) and <i>d</i> is the digit. Lets say that there is a random number <i>A</i> that is divisible by 6.</p>
+	<p>We can say that <i>A</i> = 10<sup><i>x</i></sup>⋅<i>d</i><sub><i>x</i></sub> + 10<sup><i>x</i>-1</sup>⋅<i>d</i><sub><i>x</i>-1</sub> + ⋅⋅⋅ + 10⋅<i>d</i><sub>1</sub> + <i>d</i><sub>0</sub>.</p>
+	<p>This means that if <i>A</i> is divisible by 6, then <i>A</i> ≡ 0 mod 6.</p>
+	<p>Now, we must realize that 10 ≡ 4 mod 6, 10<sup>2</sup> ≡ 10⋅10 ≡ 4⋅4 ≡ 16 ≡ 4 mod 6.</p>
+	<p>Any further, and we must realize that any power of 10 with an integer exponent greater than 1 must be equivilent to 4 modulo 6 because with every additional factor of 10, you are multipying the last 4 by 4 to get 16, which is just 4 in mod 6. This means that we can say that <i>A</i> ≡ 4⋅(<span class="sigma">&Sigma;</span> <i>d</i><sub><i>n</i></sub>) + <i>d</i><sub>0</sub>, which is exactly what I said earlier. If the units digit plus 4 times the sum of the rest of the digits is divisible by 6, then the entire number is divisible by 6. QED</p>
+	<p>Actually, there is a bit of a problem with this proof, that only observant pendants will catch. An observent pendant is the worst kind of pendant. The problem is that I said that if <i>A</i> is divisible by 6, then the divisibility rule will work. However, for my divisibility rule to be a true divisibility rule, the statement needs to be a biconditional, ie. it should state that if and only if (iff) <i>A</i> is divisible by 6, then the divisibility trick works. Since we have proved the original conditional, we only need to prove its converse to prove the entire biconditional.</p>
+	<p>Now, we realize that if <i>A</i> ≡ 4⋅(<span>&Sigma;</span> d<sub>n</sub>) + d<sub>0</sub>, then 4⋅(<span class="sigma">&Sigma;</span> d<sub>n</sub>) + d<sub>0</sub> ≡ <i>A</i>, so the logic works in reverse. Now, QED</p>
+</body>
+</html>

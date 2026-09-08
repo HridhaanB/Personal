@@ -1,0 +1,24 @@
+.popup {
+	font-family: "Press Start 2P";
+	background-color: #7a5224;
+	color: white;
+	padding: 10px;
+	width: 75%;
+	text-align: center;
+	margin: auto;
+	position: relative;
+	transition: left 0.5s;
+}
+.X {
+	font-size: 0.75em;
+	/*display: block;*/
+	background-color: red;
+	padding: 3px;
+	right: 0;
+	top: 0;
+	cursor: pointer;
+	position: absolute;
+}
+.X:hover {
+	box-shadow: 1px 1px 4px black, 0 0 50px blue, 0 0 10px darkblue;
+}

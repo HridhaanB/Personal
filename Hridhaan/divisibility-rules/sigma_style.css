@@ -1,0 +1,35 @@
+span.sigma {
+    position: static;
+    font-size: 2.5em;
+    display: inline-block;
+    line-height: .7em;
+    vertical-align: middle;
+}
+
+span.sigma:before {
+    font-size: 0.3em;
+    display: block;
+    position absolute;
+    left: 0;
+    top: 0;
+    content: "x";
+    width: 22px;
+    text-align: center;
+}
+
+span.sigma:after {
+    font-size: 0.3em;
+    display: block;
+    left: 0;
+    bottom: 0;
+    content: "n = 1";
+    text-align: center;
+
+h1 {
+	text-align: center;
+}
+
+.file {
+	float:left;
+	width:49%;
+}

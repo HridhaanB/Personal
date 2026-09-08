@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Hridhaan's Website</title>
+	<link href="../sigma_style.css" rel="stylesheet" type="text/css">
+	<link href="../../style.css" rel="stylesheet" type="text/css">
+	<link rel="icon" type="image/x-icon" href="/Me.jpg">
+</head>
+<body>
+	<nav class="navbar">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/divisibility-rules" class="subactive">Divisibility Rules</a>
+        <ul class="mDrop">
+          <li><a href="/divisibility-rules/divisibility-rule-for-2">Divisibility Rule for 2</a></li>
+          <li><a href="/divisibility-rules/divisibility-rule-for-3">Divisibility Rule for 3</a></li>
+          <li><a href="/divisibility-rules/divisibility-rule-for-4" class="active">Divisibility Rule for 4</a></li>
+					<li><a href="/divisibility-rules/divisibility-rule-for-5">Divisibility Rule for 5</a></li>
+					<li><a href="/divisibility-rules/divisibility-rule-for-6">Divisibility Rule for 6</a></li>
+					<li><a href="/divisibility-rules/divisibility-rule-for-7">Divisibility Rule for 7</a></li>
+        </ul>
+      </li>
+      <li><a href="/desmos">Desmos</a></li>
+      <li style="float:right"><a href="#help">Help</a></li>
+    </ul>
+  </nav>
+  <h1>Divisibility rule for 4</h1>
+	<p>
+    We all know the classic divisibility rule for 4. If the last two digits are divisible by 4, then the entire number is divisible by 4. For example, 124 is divisible by 4 because 24 is divisible by 4. The proof of this is relatively simple, but I'm still going to walk you through it and even expand this rule.</p>
+	<p>Here, <i>x</i> is the place of the digit (units is 0, 10s is 1, 100s is 2, etc) and <i>d</i> is the digit. Lets say that there is a random number <i>A</i> that is divisible by 4.</p>
+	<p>We can say that <i>A</i> = 10<sup><i>x</i></sup>⋅<i>d</i><sub><i>x</i></sub> + 10<sup><i>x</i>-1</sup>⋅<i>d</i><sub><i>x</i>-1</sub> + ⋅⋅⋅ + 10⋅<i>d</i><sub>1</sub> + <i>d</i><sub>0</sub>.</p>
+	<p>Any multiple of 100 is divisible by 4, so we get that if <i>A</i> is divisible by 4, then <i>A</i> ≡ 10⋅<i>d</i><sub>1</sub> + <i>d</i><sub>0</sub> mod 4. This is the common rule.</p>
+	<p>Now, we must realize that 10 ≡ 2 mod 4, so we can say that <i>A</i> ≡ 2*d<sub>1</sub> + d<sub>0</sub>. QED</p>
+	<p>Actually, there is a bit of a problem with this proof, that only observant pendants will catch. An observent pendant is the worst kind of pendant. The problem is that I said that if <i>A</i> is divisible by 4, then the divisibility rule will work. However, for my divisibility rule to be a true divisibility rule, the statement needs to be a biconditional, ie. it should state that if and only if (iff) <i>A</i> is divisible by 4, then the divisibility trick works. Since we have proved the original conditional, we only need to prove its converse to prove the entire biconditional.</p>
+	<p>Now, we realize that if <i>A</i> ≡ <i>d</i><sub>0</sub>, then <i>d</i><sub>0</sub> ≡ <i>A</i>, so the logic works in reverse. Now, QED</p>
+</body>
+</html>

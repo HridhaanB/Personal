@@ -1,0 +1,17 @@
+#game-display {
+	height: 100vh;
+	width: 100vw;
+	background-image: radial-gradient(circle at center bottom, yellow 10%, purple 90%);
+	top: 0;
+	left: 0;
+	position: fixed;
+}
+.title {
+	font-family: "Press Start 2P";
+	text-align: center;
+	font-size: 5em;
+}
+.start {
+	font-family: "Press Start 2P";
+	text-align: center;
+}
