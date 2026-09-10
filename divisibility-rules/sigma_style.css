@@ -9,7 +9,7 @@ span.sigma {
 span.sigma:before {
     font-size: 0.3em;
     display: block;
-    position absolute;
+    position: absolute;
     left: 0;
     top: 0;
     content: "x";
@@ -24,6 +24,7 @@ span.sigma:after {
     bottom: 0;
     content: "n = 1";
     text-align: center;
+}
 
 h1 {
 	text-align: center;
